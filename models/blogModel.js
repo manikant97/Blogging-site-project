@@ -16,7 +16,7 @@ const blogSchema = new mongoose.Schema(
     authorId: {
       type: ObjectId,
       required: true,
-      ref: "author",
+      ref: "author", //ObjectId here i take reference of author collection (linkings two document)
     },
     tags: {
       type: [String],
